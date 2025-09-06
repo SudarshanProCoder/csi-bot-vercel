@@ -1,0 +1,17 @@
+{
+  "name": "discord-verification-bot",
+  "version": "1.0.0",
+  "description": "Discord bot for email verification with URL redirect",
+  "main": "api/verify.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "mongoose": "^8.0.3",
+    "nodemailer": "^6.9.8"
+  },
+  "devDependencies": {
+    "vercel": "^32.5.0"
+  }
+}
