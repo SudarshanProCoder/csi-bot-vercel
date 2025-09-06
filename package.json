@@ -7,6 +7,7 @@
     "start": "node start.js",
     "dev": "node start.js",
     "deploy": "node deploy.js",
+    "build": "node api/index.js",
     "vercel-dev": "vercel dev"
   },
   "dependencies": {
