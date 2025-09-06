@@ -4,8 +4,10 @@
   "description": "Discord OTP verification bot for Vercel",
   "main": "api/index.js",
   "scripts": {
-    "start": "node bot.js",
-    "dev": "node bot.js"
+    "start": "node start.js",
+    "dev": "node start.js",
+    "deploy": "node deploy.js",
+    "vercel-dev": "vercel dev"
   },
   "dependencies": {
     "discord.js": "^14.14.1",

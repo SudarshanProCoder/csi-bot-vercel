@@ -11,14 +11,5 @@
       "src": "/api/(.*)",
       "dest": "/api/index.js"
     }
-  ],
-  "env": {
-    "DISCORD_TOKEN": "@discord-token",
-    "MONGO_URI": "@mongo-uri",
-    "SMTP_HOST": "@smtp-host",
-    "SMTP_PORT": "@smtp-port",
-    "SMTP_SECURE": "@smtp-secure",
-    "SMTP_USER": "@smtp-user",
-    "SMTP_PASS": "@smtp-pass"
-  }
+  ]
 }
