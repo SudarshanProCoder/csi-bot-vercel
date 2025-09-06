@@ -1,17 +1,20 @@
 {
   "name": "discord-verification-bot",
   "version": "1.0.0",
-  "description": "Discord bot for email verification with URL redirect",
-  "main": "api/verify.js",
+  "description": "Discord OTP verification bot for Vercel",
+  "main": "api/index.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node bot.js",
+    "dev": "node bot.js"
   },
   "dependencies": {
     "discord.js": "^14.14.1",
     "mongoose": "^8.0.3",
-    "nodemailer": "^6.9.8"
+    "nodemailer": "^6.9.8",
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1"
   },
-  "devDependencies": {
-    "vercel": "^32.5.0"
+  "engines": {
+    "node": ">=16.0.0"
   }
 }

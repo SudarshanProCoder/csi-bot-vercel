@@ -1,13 +1,24 @@
 {
-  "functions": {
-    "api/verify.js": {
-      "maxDuration": 30
-    }
-  },
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/verify",
-      "destination": "/api/verify"
+      "src": "api/index.js",
+      "use": "@vercel/node"
     }
-  ]
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/index.js"
+    }
+  ],
+  "env": {
+    "DISCORD_TOKEN": "@discord-token",
+    "MONGO_URI": "@mongo-uri",
+    "SMTP_HOST": "@smtp-host",
+    "SMTP_PORT": "@smtp-port",
+    "SMTP_SECURE": "@smtp-secure",
+    "SMTP_USER": "@smtp-user",
+    "SMTP_PASS": "@smtp-pass"
+  }
 }
